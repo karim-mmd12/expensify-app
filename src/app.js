@@ -20,11 +20,11 @@ const store = configureStore();
     console.log(visibleExpenses);
 }); */
 
-store.dispatch(addExpense({ description: 'Water Bill', createdAt: 1611133330000, amount: 10450 }));
+/* store.dispatch(addExpense({ description: 'Water Bill', createdAt: 1611133330000, amount: 10450 }));
 store.dispatch(addExpense({ description: 'Gas Bill', createdAt: 1601862810012, amount: 5550 }));
 store.dispatch(addExpense({ description: 'Rent Bill', createdAt: 1611862810012, amount: 14570 }));
 store.dispatch(addExpense({ description: 'Water Bill', createdAt: 1613862810012, amount: 10000 }));
-store.dispatch(setTextFilter(''));
+store.dispatch(setTextFilter('')); */
 
 
 const state = store.getState();
