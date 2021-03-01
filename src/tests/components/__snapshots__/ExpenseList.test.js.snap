@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return an empty list of expenses with empty message 1`] = `
+<div>
+  <p>
+    No expenses yet!
+  </p>
+</div>
+`;
+
+exports[`should return the list of expenses 1`] = `
+<div>
+  <ExpenseListItem
+    amount={4500}
+    createdAt={0}
+    description="Rent"
+    id="84c57dae-13af-465a-bbfe-3f4ab8e9a579"
+    key="84c57dae-13af-465a-bbfe-3f4ab8e9a579"
+    note=""
+  />
+  <ExpenseListItem
+    amount={4300}
+    createdAt={-172800000}
+    description="laudary"
+    id="84c57dae-13af-465a-bbfe-3f4ab8e9a571"
+    key="84c57dae-13af-465a-bbfe-3f4ab8e9a571"
+    note=""
+  />
+  <ExpenseListItem
+    amount={1000}
+    createdAt={86400000}
+    description="car"
+    id="84c57dae-13af-465a-bbfe-3f4ab8e9a572"
+    key="84c57dae-13af-465a-bbfe-3f4ab8e9a572"
+    note=""
+  />
+</div>
+`;
