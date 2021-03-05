@@ -2,6 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
+import { BigNumber } from "bignumber.js";
 
 export default class ExpenseForm extends React.Component {
     constructor(props) {
@@ -48,7 +49,7 @@ export default class ExpenseForm extends React.Component {
             this.setState(() => ({ error: '' }));
             this.props.onSubmit({
                 description: this.state.description,
-                amount: parseFloat(this.state.amount, 10) * 100,
+                amount: BigNumber(parseFloat(this.state.amount, 10) * 100).toFixed(2),
                 createdAt: this.state.createdAt.valueOf(),
                 note: this.state.note
             });

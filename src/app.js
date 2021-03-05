@@ -12,7 +12,7 @@ import './styles/style.scss';
 import AppRouter from './routers/AppRouter';
 
 const store = configureStore();
-
+console.log('testing');
 const jsx = (
     <Provider store={store}>
         <AppRouter />
