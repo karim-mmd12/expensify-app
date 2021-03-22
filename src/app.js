@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import 'normalize.css/normalize.css';
 import './styles/style.scss';
 import AppRouter from './routers/AppRouter';
+import './firebase/firebase.js';
 
 const store = configureStore();
 const jsx = (
