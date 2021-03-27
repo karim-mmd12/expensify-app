@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-require('dontenv').config({ path: '.env.development' })
+require('dotenv').config({ path: '.env.development' })
 
 module.exports = (env) => {
   console.log('env = ', env)
@@ -67,9 +67,6 @@ module.exports = (env) => {
         ),
         'process.env.FIREBASE_MESSAGING_SENDER_ID': JSON.stringify(
           process.env.FIREBASE_MESSAGING_SENDER_ID
-        ),
-        'process.env.FIREBASE_API_ID': JSON.stringify(
-          process.env.FIREBASE_API_ID
         ),
       }),
     ],

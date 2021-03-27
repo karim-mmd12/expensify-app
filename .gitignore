@@ -5,3 +5,4 @@ yarn-error.log
 src/playground
 public/dist/
 .env.development
+.env.test
